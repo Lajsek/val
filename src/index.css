@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(60deg, #f0547b, #f1bdd7);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.flashing {
+  animation: flashing 0.8s infinite alternate;
+}
+
+@keyframes flashing {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
